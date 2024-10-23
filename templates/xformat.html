@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>XFormat : Advanced Media Tools </title>
+    <link rel="stylesheet" href="static/bootstrap.css">
+</head>
+
+<body>
+    <p>Welcome to Advanced media tools, a collection of tools for editing media files</p>
+    <form class="form" action="xformat" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label class="form-label" for="format">
+                Format
+            </label>
+            <select class="form-control" name="format" id="format">
+                <option value="mp3">mp3</option>
+                <option value="ogg">m4a</option>
+                <option value="wav">wav</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="file">file</label>
+            <input class="form-control" name="file" id="file" type="file" required />
+        </div>
+
+
+        <input class="btn btn-success" type="submit" value="submit" />
+    </form>
+    <script src="static/jquery.js"></script>
+    <script src="static/bootstrap.js"></script>
+</body>
+
+</html>

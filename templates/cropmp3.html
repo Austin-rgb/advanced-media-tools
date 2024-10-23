@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CropMp3 : Advanced Media Tools </title>
+    <link rel="stylesheet" href="static/bootstrap.css">
+</head>
+
+<body>
+    <p>Welcome to Advanced media tools, a collection of tools for editing media files</p>
+    <b>Crop audio file</b>
+    <form class="form" action="cropmp3" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label class="form-label" for="start">start</label>
+            <input class="form-control" name="start" id="start" type="number" required />
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="stop">stop</label>
+            <input class="form-control" name="stop" id="stop" type="number" required />
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="file">Choose audio file</label>
+            <input class="form-control" name="file" id="file" type="file" required />
+        </div>
+
+
+        <input class="btn btn-success" type="submit" value="submit" />
+    </form>
+    <script src="static/jquery.js"></script>
+    <script src="static/bootstrap.js"></script>
+</body>
+
+</html>
